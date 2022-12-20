@@ -1,1 +1,32 @@
 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://raw.githubusercontent.com/Verica100ilkova/lab5/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/Verica100ilkova/lab5/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/Verica100ilkova/lab5/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/Verica100ilkova/lab5/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Verica Stoilkova" ;
+  foaf:title "Mrs" ;
+  foaf:givenname "Verica" ;
+  foaf:family_name "Stoilkova" ;
+  foaf:nick "Verce" ;
+  foaf:mbox_sha1sum "f7c80a5217e1ef85c1453ad6fc1612dc9f294097" ;
+  foaf:schoolHomepage <https://finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "donika" ;
+    foaf:mbox_sha1sum "d037ce382049073e684993419859024549255f53" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/DonikaSulejmani/FOAF/main/foaf.ttl?fbclid=IwAR0y_9CvQpLXj9q5OKPrUZ7nvhmyEvQqBbHxTdvz8CloGhT3_qfoyCWQpyk>
+  ], [
+    a foaf:Person ;
+    foaf:name "huma" ;
+    foaf:mbox_sha1sum "607552908e71f78a74a3ac199112b2a602e84f0c" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/HumaSejdini/FOAF/main/foaf.ttl?fbclid=IwAR2-CxnU36HdYaiWq7AtIodtZT67QB8zHO4bt4BjBA7PstN9MxCm8Q7Gjlk>
+  ] .
